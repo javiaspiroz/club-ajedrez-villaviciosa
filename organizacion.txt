@@ -1,0 +1,11 @@
+javier
+arena: problema del dia y jugar entre jugadores
+blog: noticias copy paste 
+contacto: whatsapp correo fotos png y formulario suscripcion a newsletter
+donde: ubica en maps, facil aparcar en camino de sacedon
+
+juan
+cursos: descripcion
+ligas: con menu desplegable
+login: inicio sesion
+historia
