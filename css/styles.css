@@ -1,1 +1,27 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+.navbar{
+    background-color: #705201;
+    margin-bottom: 2.5%;
+    
+}
+.navbar-brand{
+    color: white;
+    font-family: 'Lora', serif;
+}
+.navbar-brand:hover{
+    color: white;
+    font-family: 'Lora', serif; 
+    font-weight: bolder;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+#navLogin{
+    margin-left: 95vh;
+}
