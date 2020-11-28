@@ -3,7 +3,9 @@
 .navbar{
     background-color: #705201;
     margin-bottom: 2.5%;
-    
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 .navbar-brand{
     color: white;
@@ -25,3 +27,4 @@
 #navLogin{
     margin-left: 95vh;
 }
+
