@@ -6,6 +6,9 @@ donde: ubica en maps, facil aparcar en camino de sacedon
 
 juan
 cursos: descripcion
+historia:
 ligas: con menu desplegable
 login: inicio sesion
-historia
+galeria:
+
+index

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="363891fc-6a3a-42dd-b787-1f162695d3df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/club-ajedrez.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/escuela.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/liga19-20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/liga20-21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/iconHorse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logoCav.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/20191213100442_IMG_2867.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/20191213132817_IMG_2876.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/20191213132941_IMG_2877.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20140309-WA0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20161015-WA0001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20161015-WA0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20161119-WA0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20161119-WA0003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20180501-WA0000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20180502-WA0000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20181118-WA0020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20200211-WA0001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG-20200211-WA0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG_20160224_124712.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/IMG_20191217_200126_047.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/people/WhatsApp Image 2020-11-27 at 16.04.17.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/torreon-garcia-noblejas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/torreon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/villaviciosa_castillo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/arena.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/arena.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/cursos.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/enlaces.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/liga.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/liga18-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organizacion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/organizacion.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="b426a471-4d9b-4f3d-a59d-a84ae4e99419" />
+  <component name="ProjectId" id="1khlmgxnCpIyimS2bGmvdmJRA6T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/html" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/people" />
+      <recent name="$PROJECT_DIR$/html" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="363891fc-6a3a-42dd-b787-1f162695d3df" name="Default Changelist" comment="" />
+      <created>1606160875552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606160875552</updated>
+      <workItem from="1606160881845" duration="1251000" />
+      <workItem from="1606172098725" duration="3357000" />
+      <workItem from="1606337160091" duration="3552000" />
+      <workItem from="1606393029613" duration="122000" />
+      <workItem from="1606393180235" duration="252000" />
+      <workItem from="1606410986519" duration="167000" />
+      <workItem from="1606477151082" duration="365000" />
+      <workItem from="1606563497281" duration="420000" />
+      <workItem from="1606563977568" duration="2957000" />
+    </task>
+    <task id="LOCAL-00001" summary="adding empty htmls and nav bar">
+      <created>1606173442564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606173442564</updated>
+    </task>
+    <task id="LOCAL-00002" summary="readme">
+      <created>1606174819658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606174819658</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new files">
+      <created>1606339758862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606339758863</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new files 2">
+      <created>1606339810756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606339810756</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="adding empty htmls and nav bar" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="new files" />
+    <MESSAGE value="new files 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="new files 2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="958" y="406" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606563892860">
+      <screen x="0" y="0" width="2560" height="1404" />
+    </state>
+    <state x="958" y="406" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1404@0.0.2560.1404" timestamp="1606563892860" />
+    <state x="100" y="100" width="2360" height="1204" key="DiffContextDialog" timestamp="1606566693630">
+      <screen x="0" y="0" width="2560" height="1404" />
+    </state>
+    <state x="100" y="100" width="2360" height="1204" key="DiffContextDialog/0.0.2560.1404@0.0.2560.1404" timestamp="1606566693630" />
+    <state x="223" y="110" width="1536" height="873" key="MergeDialog" timestamp="1606477211181">
+      <screen x="0" y="35" width="1920" height="1045" />
+    </state>
+    <state x="223" y="110" width="1536" height="873" key="MergeDialog/0.35.1920.1045@0.35.1920.1045" timestamp="1606477211181" />
+    <state x="407" y="75" key="SettingsEditor" timestamp="1606393227971">
+      <screen x="0" y="0" width="2560" height="1404" />
+    </state>
+    <state x="407" y="75" key="SettingsEditor/0.0.2560.1404@0.0.2560.1404" timestamp="1606393227971" />
+    <state x="579" y="251" key="Vcs.Push.Dialog.v2" timestamp="1606339816446">
+      <screen x="0" y="0" width="2560" height="1404" />
+    </state>
+    <state x="579" y="251" key="Vcs.Push.Dialog.v2/0.0.2560.1404@0.0.2560.1404" timestamp="1606339816446" />
+    <state x="940" y="568" width="679" height="267" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606563840782">
+      <screen x="0" y="0" width="2560" height="1404" />
+    </state>
+    <state x="940" y="568" width="679" height="267" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1404@0.0.2560.1404" timestamp="1606563840782" />
+    <state x="705" y="458" width="774" height="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.35.1920.1045@0.35.1920.1045" timestamp="1606477174328" />
+  </component>
+</project>
