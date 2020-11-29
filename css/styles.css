@@ -7,15 +7,6 @@
     padding-bottom: 0px;
     padding-top: 0px;
 }
-.navbar-brand{
-    color: white;
-    font-family: 'Lora', serif;
-}
-.navbar-brand:hover{
-    color: white;
-    font-family: 'Lora', serif; 
-    font-weight: bolder;
-}
 .nav-link{
     color: white;
 }
@@ -27,4 +18,24 @@
 #navLogin{
     margin-left: 95vh;
 }
+.navbar-nav li>ul{
+    display:none;
+}
 
+.navbar-nav  li:hover>ul{
+    display:block;
+    position:absolute;
+    top:40px;
+    left:0px;
+    /*text-align: left;*/
+    background-color: black;
+    opacity: 0.8;
+    width:100%;
+}
+
+.navbar-nav  li ul a:hover{
+    text-align: left;
+    color: orange;
+    font-weight: bold;
+    font-size: 16px;
+}

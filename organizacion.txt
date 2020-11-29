@@ -2,7 +2,7 @@ javier
 arena: problema del dia y jugar entre jugadores
 blog: noticias copy paste https://chess24.com/es
 contacto: whatsapp correo fotos png y formulario suscripcion a newsletter
-donde: ubica en maps, facil aparcar en camino de sacedon
+donde: ubica en maps, facil aparcar en camino de sacedon----añadir horario
 
 juan
 cursos: descripcion
