@@ -11,65 +11,59 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="alert alert-info alert-dismissible fade show">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Info! </strong>Eres una persona maravillosa :)
-    </div>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1>Club de ajedrez Villaviciosa</h1>
-            <blockquote class="blockquote">
-                <p>Odio la cerveza Cruzcampo</p>
-                <footer class="blockquote-footer">Magnus Carlsen, World Chess Champion</footer>
-            </blockquote>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top oscuro" id="inicio">
+        <a class="navbar-brand" href="index.html"><img src="images/logoCav.jpg" height="50" width="100"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="html/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/donde.html">Dónde estamos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/contacto.html">Contacto</a> <!-- Esto puede ir al footer -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/escuela.html">Escuela</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Liga</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="html/liga/liga20-21.html">Liga 20-21</a>
+                        <a class="dropdown-item" href="html/liga/liga19-20.html">Liga 19-20</a>
+                        <a class="dropdown-item" href="html/liga/liga18-19.html">Liga 18-19</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/arena.html">Arena</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/enlaces.html">Enlaces de interés</a>
+                </li>
+                <li class="nav-item" id="navLogin">
+                    <a class="nav-link" href="html/login.html">Login</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-            <a class="navbar-brand" href="index.html"><img src="images/logoCav.jpg" height="50" width="100"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/donde.html">Dónde estamos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/historia.html">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/contacto.html">Contacto</a> <!-- Esto puede ir al footer -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/escuela.html">Escuela</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Liga</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="html/liga/liga20-21.html">Liga 20-21</a>
-                            <a class="dropdown-item" href="html/liga/liga19-20.html">Liga 19-20</a>
-                            <a class="dropdown-item" href="html/liga/liga18-19.html">Liga 18-19</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/arena.html">Arena</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/enlaces.html">Enlaces de interés</a>
-                    </li>
-                    <li class="nav-item" id="navLogin">
-                        <a class="nav-link" href="html/login.html">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    <div class="row">
+    </nav>
+    <div class="jumbotron jumbotron-fluid claro ceroMargin smallPadding"><div class="container">
+        <h1>Club de ajedrez Villaviciosa</h1>
+        <blockquote class="blockquote">
+            <p>Odio la cerveza Cruzcampo</p>
+            <footer class="blockquote-footer">Magnus Carlsen, World Chess Champion</footer>
+        </blockquote>
+    </div></div>
+    <div class="row medio">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
             <div id="demo" class="carousel slide" data-ride="carousel">
@@ -104,12 +98,47 @@
         </div>
         <div class="col-sm-4"></div>
     </div> <!-- Carrousel -->
-    <footer class="page-footer font-small cyan darken-3">
+    <div class="row medio">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="mx-auto d-block img-fluid" src="images/people/ivanyrivalbaw.JPG" alt="ivan"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="mx-auto d-block img-fluid" src="images/people/torneosocial.jpg"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="mx-auto d-block img-fluid" src="images/people/social2.jpg"/>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div> <!-- Carrousel -->
+    <footer class="page-footer font-small oscuro darken-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 py-5">
                     <div class="mb-5 flex-center">
-                        <a class="fb-ic">
+                        <a class="fb-ic" href=https://es-es.facebook.com/Club-Ajedrez-Villaviciosa-CAV-723788761034112/>
                             <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!-- Twitter -->
@@ -136,7 +165,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> Clubajedrezvillaviciosa.com</a>
+            <a href=#inicio> Clubajedrezvillaviciosa.com</a>
         </div>
         <!-- Copyright -->
 

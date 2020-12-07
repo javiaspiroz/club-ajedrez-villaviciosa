@@ -39,12 +39,21 @@
     font-weight: bold;
     font-size: 16px;
 }*/
-.navbar{
-    background-color: darkseagreen;
+html,body {
+    overflow-x: hidden;
 }
-.jumbotron{
+.oscuro{
+    background-color: #705022 !important;
+}
+.medio{
+    background-color: #c69146 !important;
+}
+.claro{
+    background-color: #ddbe91 !important;
+}
+.ceroMargin{
     margin: 0;
 }
-.alert{
-    margin: 0;
+.smallPadding{
+    padding: 2rem;
 }
