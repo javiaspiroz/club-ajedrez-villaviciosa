@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
-
+/*
 .navbar{
     background-color: #705201;
     margin-bottom: 2.5%;
@@ -27,7 +27,7 @@
     position:absolute;
     top:40px;
     left:0px;
-    /*text-align: left;*/
+    !*text-align: left;*!
     background-color: black;
     opacity: 0.8;
     width:100%;
@@ -38,4 +38,13 @@
     color: orange;
     font-weight: bold;
     font-size: 16px;
+}*/
+.navbar{
+    background-color: darkseagreen;
+}
+.jumbotron{
+    margin: 0;
+}
+.alert{
+    margin: 0;
 }
