@@ -42,6 +42,14 @@
 html,body {
     overflow-x: hidden;
 }
+
+section{
+    position:relative;
+    width:100%;
+    height:25rem;
+    background: url(../images/gambitoDama.jpg);
+    background-attachment: fixed;
+}
 .oscuro{
     background-color: #705022 !important;
     color: white !important;
