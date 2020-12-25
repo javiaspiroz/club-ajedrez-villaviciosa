@@ -69,3 +69,12 @@ section{
 .tarjeta{
     padding: 180px 0 180px 0;
 }
+.card-img-top{
+    /*padding-left: 10px;
+    margin-right: 10%;*/
+    height: 20px;
+}
+
+a{
+    color: white;
+}
