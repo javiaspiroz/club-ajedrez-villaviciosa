@@ -12,3 +12,8 @@ login: inicio sesion
 galeria:
 
 index
+
+documentacion
+objetivos de la web
+memoria añadir arbol de web: sitemap
+como esta hecho cada modulo (explicado y su estructuración)
