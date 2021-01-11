@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>CAV | Bienbenido</title>
+    <title>CAV | Registro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../images/iconHorse.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -43,20 +43,20 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Liga</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="liga/liga20-21.html">Liga 20-21</a>
-                        <a class="dropdown-item" href="liga/liga19-20.html">Liga 19-20</a>
-                        <a class="dropdown-item" href="liga/liga18-19.html">Liga 18-19</a>
+                        <a class="dropdown-item" href="../html/liga/liga20-21.html">Liga 20-21</a>
+                        <a class="dropdown-item" href="../html/liga/liga19-20.html">Liga 19-20</a>
+                        <a class="dropdown-item" href="../html/liga/liga18-19.html">Liga 18-19</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="enlaces.html">Enlaces de interés</a>
+                    <a class="nav-link" href="../html/enlaces.html">Enlaces de interés</a>
                 </li>
                 <li class="nav-item" id="navLogin">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="../html/login.html">Login</a>
                 </li>
             </ul>
         </div>
-	</nav>
+    </nav>
 	
 	<?php
 	define("DB_SERVER", "localhost");
