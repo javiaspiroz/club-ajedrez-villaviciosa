@@ -1,0 +1,26 @@
+{
+  "name": "club-ajedrez-villaviciosa",
+  "version": "1.0.0",
+  "description": "Página web del Club de ajedrez Villaviciosa (Asignatura desarrollo web 3º)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/tailwind.css --output css/output/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juanal07/club-ajedrez-villaviciosa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juanal07/club-ajedrez-villaviciosa/issues"
+  },
+  "homepage": "https://github.com/Juanal07/club-ajedrez-villaviciosa#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
