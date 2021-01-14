@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/iconHorse.png"/>
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style1.css">
+<!--    <link rel="stylesheet" href="css/styles.css">-->
+<!--    <link rel="stylesheet" href="css/style1.css">-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/output/tailwind.css">
 </head>
 <body>
@@ -18,38 +18,68 @@
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-gray-800" href="index.html">
+                <img class ="inline-block" src="images/logoCav.jpg" height="40" width="100"/>
                 Club Ajedrez Villaviciosa
             </a>
-            <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
-                <i class="fas fa-bars">ASDASd</i>
+            <button
+                    class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button"
+                    onclick="toggleNavbar('example-collapse-navbar')"
+            >
+                <i class="text-white fas fa-bars"></i>
             </button>
         </div>
-        <div class="lg:flex flex-grow items-center hidden" id="example-navbar-danger">
-        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li class="nav-item">
-                <a href="html/blog.html" class="px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-800 hover:text-gray-600" target="_blank">
-                <i class="fab fa-facebook-square text-lg leading-lg text-gray-500"></i>
-                <span class="ml-2">Blog</span></a>
-            </li>
-            <li class="nav-item">
-                <a href="https://twitter.com/intent/tweet?text=Check%20Tailwind%20Starter%20Kit%2C%20a%20beautiful%20extension%20of%20%23TailwindCSS%20made%20by%20%40CreativeTim%20%23webdesign%20%23starterkit&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Flearning-lab%2Ftailwind-starter-kit%23%2Fpresentation" class="px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-800 hover:text-gray-600" target="_blank">
-                <i class="fab fa-twitter text-lg leading-lg text-gray-500"></i>
-                <span class="ml-2">Tweet</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-800 hover:text-gray-600" href="/learning-lab/tailwind-starter-kit/documentation/quick-start">
-                <i class="far fa-file-alt text-lg leading-lg text-gray-500"></i>
-                <span class="ml-2">Docs</span></a></li>
-            <li class="nav-item"><a class="download-button px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-800 hover:text-gray-600" href="/learning-lab/tailwind-starter-kit/documentation/download">
-                <i class="fas fa-arrow-alt-circle-down text-lg leading-lg text-gray-500"></i>
-                <span class="ml-2">Download</span></a>
-            </li>
-            <li class="nav-item"><a href="https://github.com/creativetimofficial/tailwind-starter-kit/archive/designer-files.zip?ref=tsk-navbar" class="download-button px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-800 hover:text-gray-600">
-                <i class="fab fa-sketch text-lg leading-lg text-gray-500"></i>
-                <span class="ml-2">Download Designer</span>
-            </a>
-            </li>
-        </ul>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-navbar-danger">
+            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                <li class="flex items-center">
+                    <a
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo"
+                    ><i
+                            class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Share</span></a
+                    >
+                </li>
+                <li class="flex items-center">
+                    <a
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo"
+                    ><i
+                            class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+                    >
+                </li>
+                <li class="flex items-center">
+                    <a
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo"
+                    ><i
+                            class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Star</span></a
+                    >
+                </li>
+                <li class="flex items-center">
+                    <button
+                            class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                            type="button"
+                            style="transition: all 0.15s ease 0s;"
+                    >
+                        <i class="fas fa-arrow-alt-circle-down"></i> Download
+                    </button>
+                </li>
+                <li class="flex items-center">
+                    <button
+                            class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                            type="button"
+                            style="transition: all 0.15s ease 0s;"
+                    >
+                        <i class="fas fa-arrow-alt-circle-down"></i> Download
+                    </button>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -744,5 +774,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js" crossorigin="anonymous"></script>
+
 </body>
+<script>
+    function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+</script>
 </html>
