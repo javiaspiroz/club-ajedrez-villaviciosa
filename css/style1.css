@@ -1,94 +1,94 @@
-/*!*javi*!*/
-/*.contArena{*/
-/*    text-align: center;*/
-/*}*/
+/*javi*/
+.contArena{
+    text-align: center;
+}
 
-/*.h3Arena{*/
-/*    font-weight: bold;*/
-/*}*/
+.h3Arena{
+    font-weight: bold;
+}
 
-/*.contactoLink{*/
-/*    font-size: 1.3em;*/
-/*}*/
+.contactoLink{
+    font-size: 1.3em;
+}
 
-/*label span {*/
-/*    font-size: 1rem;*/
-/*}*/
-/*  */
-/*label.error {*/
-/*    color: red;*/
-/*    font-size: 1rem;*/
-/*    display: block;*/
-/*    margin-top: 5px;*/
-/*}*/
-/*  */
-/*input.error, textarea.error {*/
-/*    border: 1px dashed red;*/
-/*    font-weight: 300;*/
-/*    color: red;*/
-/*}*/
+label span {
+    font-size: 1rem;
+}
 
-/*.contForm, .contDonde {*/
-/*    border-radius: 5px;*/
-/*    background-color: #c69146;*/
-/*    padding: 20px;*/
-/*    margin-bottom: 20px;*/
-/*    text-align: justify;*/
-/*}*/
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
 
-/*input[type=submit]:hover {*/
-/*    background-color: #aa2727;*/
-/*}*/
+input.error, textarea.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
 
-/*input[type=text], select, textarea {*/
-/*    width: 100%; */
-/*    padding: 12px;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 4px; */
-/*    box-sizing: border-box; */
-/*    margin-top: 6px; */
-/*    margin-bottom: 16px;*/
-/*    resize: vertical !* Allow the user to vertically resize the textarea (not horizontally) *!*/
-/*}*/
+.contForm, .contDonde {
+    border-radius: 5px;
+    background-color: #c69146;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
 
-/*input[type=submit] {*/
-/*    background-color:#aa2727;*/
-/*    color: white;*/
-/*    padding: 12px 20px;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*}*/
+input[type=submit]:hover {
+    background-color: #aa2727;
+}
 
-/*#newsletter{*/
-/*    margin-left: 10px;*/
-/*}*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-/*#newsletterText{*/
-/*    margin-left: 30px;*/
-/*}*/
+input[type=submit] {
+    background-color:#aa2727;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-/*#textContact{*/
-/*    text-align: center;*/
-/*}*/
+#newsletter{
+    margin-left: 10px;
+}
 
-/*.noticia{*/
-/*    text-align: center;*/
-/*    margin-bottom: 20px;*/
-/*}*/
+#newsletterText{
+    margin-left: 30px;
+}
 
-/*p{*/
-/*    text-align: justify;*/
-/*}*/
+#textContact{
+    text-align: center;
+}
 
-/*.titulo{*/
-/*    font-weight: bold;*/
-/*}*/
+.noticia{
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-/*!*blockquote{*/
-/*    position: inherits;*/
-/*}*!*/
+p{
+    text-align: justify;
+}
 
-/*.card-body{*/
-/*    align-self: center;*/
-/*}*/
+.titulo{
+    font-weight: bold;
+}
+
+/*blockquote{
+    position: inherits;
+}*/
+
+.card-body{
+    align-self: center;
+}
