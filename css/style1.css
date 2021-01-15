@@ -92,3 +92,13 @@ p{
 .card-body{
     align-self: center;
 }
+
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: center;
+    font-weight: bold;
+  }

@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top oscuro" id="inicio">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top oscuro" id="inicio">
         <a class="navbar-brand" href="../index.html"><img src="../images/logoCav.jpg" height="50" width="100"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -58,10 +58,74 @@
         </div>
     </nav>
 
+    <div class="claro">
+    <br><br><br>
+        <div class="container">
+            <br>
+        
 <?php
 	session_start();
-    echo("BIENVENIDO " . $_SESSION['fname']);
+	define("DB_SERVER", "localhost");
+	define("DB_USER", "root");
+	define("DB_PASS", "");
+	define("DB_NAME", "cav");
+
+  // 1. Crear conexión con la BBDD
+  $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+  // Test if connection succeeded
+  if(mysqli_connect_errno()) {
+    die("La conexión con la BBDD ha fallado: " . 
+         mysqli_connect_error() . 
+         " (" . mysqli_connect_errno() . ")"
+    );
+  }
 ?>
+<?php
+    //session_start();
+    
+    //echo("BIENVENIDO " . $_SESSION['fname']);
+    if ($_SESSION['fname'] == "admin"){
+        echo("<h3>BIENVENIDO Administrador</h3>");
+    }
+    else{
+        echo("<h3>BIENVENIDO " . $_SESSION['fname'] . "</h3>");
+        echo("<br><p>A continuación te mostramos un lista de los integrantes del club y sus datos de contacto:</p><br>");
+  
+	    $query = "SELECT * FROM `usuarios`" ;
+	    //echo $query;
+	
+	    $result = mysqli_query($connection, $query);
+
+	    if ($result) {
+		    // Success
+		    // redirect_to("somepage.php");
+		    //echo "Success!";
+	    } else {
+		    // Failure
+		    // $message = "Subject creation failed";
+		    die("Database query failed. " . mysqli_error($connection));
+	    }
+        
+        echo("<table style='width: 75%; border: 1px solid black;'>  <tr style='text-align: center; border: 1px solid black;'> <th style='font-weight: bold;'>Username</th><th style='font-weight: bold;'>Nombre</th> <th style='font-weight: bold;'>Apellido</th> <th style='font-weight: bold;'>email</th> </tr>");
+
+	    if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo("<tr style='text-align: center; border: 1px solid black;'><td>".$row["username"]."</td><td>".$row["fname"]."</td><td>".$row["lname"]."</td><td><a href='mailto:".$row["email"]."'>".$row["email"]."</a></tr>");
+                //echo "Username: " . $row["username"] . ", Nombre: " . $row["fname"]. ", Apellido: " . $row["lname"] . ", email: " . $row["email"] . "<br>";
+            }
+        } else {
+            echo "0 results";
+        }
+
+        echo("</table>");
+
+    }
+?>
+
+            <br><br>
+	    </div>
+    </div>
 
 <footer class="page-footer font-small oscuro darken-3">
         <div class="container">
