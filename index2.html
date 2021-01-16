@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Club Ajedrez Villaviciosa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/iconHorse.png"/>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+<!--    <link rel="stylesheet" href="css/styles.css">-->
+<!--    <link rel="stylesheet" href="css/style1.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/output/tailwind.css">
+</head>
+<body>
+
+<nav class="fixed z-50 w-full bg-white top-0 flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg shadow-lg">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-gray-800" href="index.html">
+                <img class ="inline-block" src="images/logoCav.jpg" height="40" width="100"/>
+                Club Ajedrez Villaviciosa
+            </a>
+            <button
+                    class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button"
+                    onclick="toggleNavbar('example-collapse-navbar')"
+            >
+                <i class="text-white fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-navbar-danger">
+            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                <li class="flex items-center">
+                    <a
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo"
+                    ><i
+                            class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Share</span></a
+                    >
+                </li>
+                <li class="flex items-center">
+                    <a
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo"
+                    ><i
+                            class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+                    >
+                </li>
+                <li class="flex items-center">
+                    <a
+                            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo"
+                    ><i
+                            class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Star</span></a
+                    >
+                </li>
+                <li class="flex items-center">
+                    <button
+                            class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                            type="button"
+                            style="transition: all 0.15s ease 0s;"
+                    >
+                        <i class="fas fa-arrow-alt-circle-down"></i> Download
+                    </button>
+                </li>
+                <li class="flex items-center">
+                    <button
+                            class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                            type="button"
+                            style="transition: all 0.15s ease 0s;"
+                    >
+                        <i class="fas fa-arrow-alt-circle-down"></i> Download
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+        <div class="absolute top-0 w-full h-full bg-center bg-coverbg bg-fixed" style="background-image: url(&quot;https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80&quot;);">
+            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <div class="pr-12">
+                        <h1 class="text-white font-semibold text-5xl">
+                            Club de ajedrez Villaviciosa
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-300">
+                            «El ajedrez es la vida en miniatura. El ajedrez es esfuerzo, el ajedrez es lucha».
+                            Garri Kaspárov, former World Chess Champion
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px; transform: translateZ(0px);">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </div>
+
+    <section class="pb-20 bg-gray-300 -mt-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h6 class="text-xl font-semibold">Awarded Agency</h6>
+                            <p class="mt-2 mb-4 text-gray-600">
+                                Divide details about your product or agency work into parts.
+                                A paragraph describing a feature will be enough.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                                <i class="fas fa-retweet"></i>
+                            </div>
+                            <h6 class="text-xl font-semibold">Free Revisions</h6>
+                            <p class="mt-2 mb-4 text-gray-600">
+                                Keep you user engaged by providing meaningful information.
+                                Remember that by this time, the user is curious.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                            <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <h6 class="text-xl font-semibold">Verified Company</h6>
+                            <p class="mt-2 mb-4 text-gray-600">
+                                Write a few lines about each one. A paragraph describing a
+                                feature will be enough. Keep you user engaged!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center mt-32">
+                <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                    <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+                        <i class="fas fa-user-friends text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                        Working with us is a pleasure
+                    </h3>
+                    <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                        Don't let your uses guess by attaching tooltips and popoves to
+                        any element. Just make sure you enable them first via
+                        JavaScript.
+                    </p>
+                    <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                        The kit comes with three pre-built pages to help you get started
+                        faster. You can change the text and images and you're good to
+                        go. Just make sure you enable them first via JavaScript.
+                    </p>
+                    <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation" class="font-bold text-gray-800 mt-8">Check Tailwind Starter Kit!</a>
+                </div>
+                <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+                        <img alt="..." src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80" class="w-full align-middle rounded-t-lg">
+                        <blockquote class="relative p-8 mb-4">
+                            <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                                <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
+                            </svg>
+                            <h4 class="text-xl font-bold text-white">
+                                Top Notch Services
+                            </h4>
+                            <p class="text-md font-light mt-2 text-white">
+                                The Arctic Ocean freezes every winter and much of the
+                                sea-ice then thaws every summer, and that process will
+                                continue whatever happens.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="relative py-20">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                    <img alt="..." class="max-w-full rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80">
+                </div>
+                <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                    <div class="md:pr-12">
+                        <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                            <i class="fas fa-rocket text-xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-semibold">A growing company</h3>
+                        <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                            The extension comes with three pre-built pages to help you get
+                            started faster. You can change the text and images and you're
+                            good to go.
+                        </p>
+                        <ul class="list-none mt-6">
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div>
+                                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fas fa-fingerprint"></i></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-gray-600">
+                                            Carefully crafted components
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div>
+                                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fab fa-html5"></i></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-gray-600">Amazing page examples</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div>
+                                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="far fa-paper-plane"></i></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-gray-600">Dynamic components</h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-20 pb-48">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center text-center mb-24">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h2 class="text-4xl font-semibold">Here are our heroes</h2>
+                    <p class="text-lg leading-relaxed m-4 text-gray-600">
+                        According to the National Oceanic and Atmospheric
+                        Administration, Ted, Scambos, NSIDClead scentist, puts the
+                        potentially record maximum.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img alt="..." src="./assets/img/team-1-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Ryan Tompson</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                Web Developer
+                            </p>
+                            <div class="mt-6">
+                                <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-twitter"></i></button><button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                <i class="fab fa-facebook-f"></i></button><button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                <i class="fab fa-dribbble"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img alt="..." src="./assets/img/team-2-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Romina Hadid</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                Marketing Specialist
+                            </p>
+                            <div class="mt-6">
+                                <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-google"></i></button><button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img alt="..." src="./assets/img/team-3-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Alexa Smith</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                UI/UX Designer
+                            </p>
+                            <div class="mt-6">
+                                <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-google"></i></button><button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                <i class="fab fa-twitter"></i></button><button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img alt="..." src="./assets/img/team-4-470x470.png" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Jenna Kardi</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                Founder and CEO
+                            </p>
+                            <div class="mt-6">
+                                <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-dribbble"></i></button><button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                <i class="fab fa-google"></i></button><button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                <i class="fab fa-twitter"></i></button><button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pb-20 relative block bg-gray-900">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+            <div class="flex flex-wrap text-center justify-center">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h2 class="text-4xl font-semibold text-white">Build something</h2>
+                    <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                        Put the potentially record low maximum sea ice extent tihs year
+                        down to low ice. According to the National Oceanic and
+                        Atmospheric Administration, Ted, Scambos.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap mt-12 justify-center">
+                <div class="w-full lg:w-3/12 px-4 text-center">
+                    <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                        <i class="fas fa-medal text-xl"></i>
+                    </div>
+                    <h6 class="text-xl mt-5 font-semibold text-white">
+                        Excelent Services
+                    </h6>
+                    <p class="mt-2 mb-4 text-gray-500">
+                        Some quick example text to build on the card title and make up
+                        the bulk of the card's content.
+                    </p>
+                </div>
+                <div class="w-full lg:w-3/12 px-4 text-center">
+                    <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                        <i class="fas fa-poll text-xl"></i>
+                    </div>
+                    <h5 class="text-xl mt-5 font-semibold text-white">
+                        Grow your market
+                    </h5>
+                    <p class="mt-2 mb-4 text-gray-500">
+                        Some quick example text to build on the card title and make up
+                        the bulk of the card's content.
+                    </p>
+                </div>
+                <div class="w-full lg:w-3/12 px-4 text-center">
+                    <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-xl"></i>
+                    </div>
+                    <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+                    <p class="mt-2 mb-4 text-gray-500">
+                        Some quick example text to build on the card title and make up
+                        the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative block py-24 lg:pt-0 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+                        <div class="flex-auto p-5 lg:p-10">
+                            <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                            <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                                Complete this form and we will get back to you in 24 hours.
+                            </p>
+                            <div class="relative w-full mb-3 mt-8">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full Name</label><input type="text" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Full Name" style="transition: all 0.15s ease 0s;">
+                            </div>
+                            <div class="relative w-full mb-3">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Email</label><input type="email" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Email" style="transition: all 0.15s ease 0s;">
+                            </div>
+                            <div class="relative w-full mb-3">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">Message</label><textarea rows="4" cols="80" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Type a message..."></textarea>
+                            </div>
+                            <div class="text-center mt-6">
+                                <button class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" type="button" style="transition: all 0.15s ease 0s;">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!--    <nav class="navbar navbar-expand-sm | navbar-dark sticky-top oscuro" id="inicio">-->
+<!--        <a class="navbar-brand" href="index.html"><img src="images/logoCav.jpg" height="50" width="100"/></a>-->
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="collapsibleNavbar">-->
+<!--            <ul class="navbar-nav">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="html/blog.html">Blog</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#historia">Historia</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#escuela">Escuela</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#galeria">Galería</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#donde">Dónde estamos</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#contacto">Contacto</a> &lt;!&ndash; Esto puede ir al footer &ndash;&gt;-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="html/arena.html">Arena</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Liga</a>-->
+<!--                    <div class="dropdown-menu">-->
+<!--                        <a class="dropdown-item" href="#liga">Liga 20-21</a>-->
+<!--                        <a class="dropdown-item" href="html/liga/liga19-20.html">Liga 19-20</a>-->
+<!--                        <a class="dropdown-item" href="html/liga/liga18-19.html">Liga 18-19</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="html/enlaces.html">Enlaces de interés</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item" id="navLogin">-->
+<!--                    <a class="nav-link" href="html/login.html">Login</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+
+    <div class="jumbotron jumbotron-fluid claro ceroMargin smallPadding">
+        <div class="container">
+            <h1>Club de ajedrez Villaviciosa</h1>
+            <blockquote class="blockquote">
+                <p>«El ajedrez es la vida en miniatura. El ajedrez es esfuerzo, el ajedrez es lucha».</p>
+                <footer class="blockquote-footer">Garri Kaspárov, former World Chess Champion</footer>
+            </blockquote>
+        </div>
+    </div>
+<!--    <section></section>-->
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--    <script type="text/javascript">-->
+<!--        $(window).scroll(function(){-->
+<!--            var scroll_position = $(window).scrollTop()/2;-->
+<!--            $('section').css({-->
+<!--                'background-position-x': + scroll_position + 'px',-->
+<!--            })-->
+<!--        })-->
+<!--    </script>-->
+    <div class="tarjeta oscuro" id="blog" style="padding: 100px 0 100px 0">
+        <div class="row oscuro " style="padding: 50px">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" style="text-align:center"><h1 class="titulo">Últimas noticias</h1></div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row oscuro">
+            
+            <div class="col-sm-4">
+                <a href="html/blog/noticia1.html">
+                <img class="card-img-top" src="https://cdn.chess24.com/Yo-69bbDSMKBuiIf76zmFg/original/magnus-carlsen-hikaru-nakamura.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Carlsen pone en duda el futuro del ajedrez clásico</h5>
+                    <p class="card-text">En una larga entrevista con Jonathan Tisdall para la Federación Noruega de
+                        Ajedrez y publicada en Chess Life Online, Magnus Carlsen arroja dudas sobre el futuro del
+                        ajedrez clásico y sugiere más eventos clásicos de Fischer-Random.
+                    </p>
+                </div>
+                </a>  
+            </div>
+            
+            <div class="col-sm-4">
+                <a href="html/blog/noticia2.html">
+                    <img class="card-img-top" src="https://cdn.chess24.com/wOOLEeuGSRKe2ZC58PmMlw/original/carlsengambit.JPG">
+                    <div class="card-body">
+                        <h5 class="card-title">Magnus Carlsen sobre Gambito de Dama: "Diría que es un 5/6"</h5>
+                        <p class="card-text">La exitosa serie de Netflix Gambito de Dama ha conquistado el mundo
+                            (del ajedrez). Incluso el Campeón del Mundo Magnus Carlsen la disfrutó, pero tenía algunas
+                            reservas.
+                        </p>
+                        </div>
+                    </a>
+            </div>
+            
+            <div class="col-sm-4">
+                <a href="html/blog/noticia3.html">
+                    <img class="card-img-top" src="images/noticia31.PNG">
+                    <div class="card-body">
+                        <h5 class="card-title">Cronología de las ideas: Metodología para el estudio de aperturas</h5>
+                        <p class="card-text">El MF cubano Reynold Fernández Mayola ha realizado este fantástico artículo sobre cómo seguir una metodología correcta en el momento que nos adentremos en el mundo de las aperturas y no errar por el camino.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="tarjeta medio" id="historia">
+        <div class="row | medio">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4"><img src="images/torreon-garcia-noblejas.jpg" height="300" width="auto"/></div>
+            <div class="col-sm-4"><h1 class="titulo">Historia del Club de Ajedrez Villaviciosa</h1>
+                <p>En 1954 Jose Luis Perez... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque erat quis tortor eleifend feugiat. </p>
+                <a class="nav-link" href="html/historia.html">
+                    <button type="button" class="btn btn-info">Saber más</button>
+                </a>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="tarjeta claro" id="escuela">
+        <div class="row claro">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6"><img src="images/people/grupo2.jpg" height="300" width="auto"/></div>
+            <div class="col-sm-3"><h1 class="titulo">Escuela</h1>
+                <p>
+                    Ven con nosotros a aprender ajedrez en nuestras clases grupales o individuales. Tenemos grupos de todas las edades y niveles.
+                </p>
+                <a class="nav-link" href="html/escuela.html">
+                    <button type="button" class="btn btn-info">Saber más</button>
+                </a>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="tarjeta oscuro" id="galeria">
+        <div class="row oscuro" >
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3"><h1 class="titulo">Galería</h1><p>
+                Disfruta de las fotografias de nuestros jugadores en competición.
+            </p></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="4"></li>
+                        <li data-target="#demo" data-slide-to="5"></li>
+                        <li data-target="#demo" data-slide-to="6"></li>
+                        <li data-target="#demo" data-slide-to="7"></li>
+                        <li data-target="#demo" data-slide-to="8"></li>
+                        <li data-target="#demo" data-slide-to="9"></li>
+                        <li data-target="#demo" data-slide-to="10"></li>
+                    </ul>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="mx-auto d-block img-fluid" src="images/people/ivanyrivalbaw.JPG" alt="ivan"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/torneosocial.jpg"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/trofeo.jpeg"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/gonzalo.JPG" height="1280" width="1920"/></div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/grupo1.jpg" height="612" width="816"/></div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/arcadio.jpg" height="529"
+                                                                       width="720"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/diego.jpg" height="1200"
+                                                                       width="1599"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/rodri.jpg" height="1200"
+                                                                       width="1600"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/vicenti.jpg" height="1200"
+                                                                       width="1599"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/yago.jpg" height="1200"
+                                                                       width="1599"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="images/people/alvar.jpg" height="853"
+                                                                       width="1280"/>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <div class="tarjeta claro" id="liga">
+        <div class="row claro">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6"><img src="images/people/liga.JPG" height="500" width="auto"/></div>
+            <div class="col-sm-3"><h1 class="titulo">Liga Madrileña de ajedrez</h1>
+                <p>
+                    Unete y representa el escudo de Villaviciosa en la liga madrileña de ajedrez. Tenemos equipos en 3ª, 2ª y 1ª división y competimos de tú a tú contra municipios que nos triplican en poblacion como Móstoles, Alcorcón, Parla...
+                </p>
+                <a class="nav-link" href="html/liga/liga20-21.html">
+                    <button type="button" class="btn btn-info">Saber más</button>
+                </a>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="tarjeta medio" id="donde">
+        <div class="row medio" style="padding-bottom: 50px">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" style="text-align:center"><h1 class="titulo">¿Dónde estamos?</h1></div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class= "container contDonde medio">
+            <div class="col-sm-12 medio">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d380.0470066575928!2d-3.
+                9098717!3d40.3561853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c8ea2070f7c590f!2sPabell%C3%B3n
+                %20Cubierto%20Municipal%20%22Chema%20Mart%C3%ADnez%22!5e0!3m2!1ses!2ses!4v1606599414716!5m2!1ses!2ses"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                <p>Nuestro club se sitúa en el Pabellón Municipal Chema Martínez. Puedes acudir a él de muchas formas,
+                    pero si lo haes en coche, encontraras aparcamiento fácilmante en Camino de Sacedón.</p>
+            </div>
+        </div>
+    </div>
+    <div class="tarjeta claro" id="contacto">
+        <div class="container claro">
+            <p id="textContact">Tienes tres formas de contactarnos, mandándonos un WhatsApp o llamando, con un email o rellenando el formulario.</p>
+            <div class = "row claro">
+                <div class="caja_texto col-md-2">
+                </div>
+                <div class="contactoLink col-md-4 d-inline-block">
+                    <img class="contactoLink w-25" src="images/whatsapp-logo-1.png" alt="tel">
+                    <a class="contactoLink" href="tel:600000000">600000000</a>
+                </div>
+                <div class="contactoLink col-md-4 d-inline-block">
+                    <img class="contactoLink w-25" src="images/email.png" alt="email">
+                    <a class="contactoLink" href="mailto:example@email.com">example@email.com</a>
+                </div>
+                <div class="caja_texto col-md-2">
+                </div>
+            </div>
+            <br>
+            <div class="container contForm claro">
+                <form id="contact-form" action="php/formulario.php" method="post">
+
+                    <label for="fname">Nombre *</label>
+                    <input type="text" id="fname" name="fname" placeholder="Tu nombre...">
+                    <br>
+                    <label for="lname">Apellido *</label>
+                    <input type="text" id="lname" name="lname" placeholder="Tu apellido...">
+                    <br>
+                    <label for="email">eMail *</label>
+                    <input type="text" id="email" name="email" placeholder="Tu eMail...">
+                    <br>
+                    <label for="subject">Asunto *</label>
+                    <textarea id="subject" name="subject" placeholder="Deja tu mensaje..." style="height:200px"></textarea>
+                    <br>
+                    <input type="checkbox" name="newsletter" value='1' class="form-check-input" id="newsletter">
+                    <label class="form-check-label" for="newsletter" id="newsletterText">Deseo suscribirme a la newsletter</label>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer class="page-footer font-small oscuro darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+                        <a class="fb-ic" href=https://es-es.facebook.com/Club-Ajedrez-Villaviciosa-CAV-723788761034112/>
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fas fa-mail-bulk	 fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href=#inicio> Clubajedrezvillaviciosa.com</a>
+        </div>
+    </footer>
+
+<footer class="bg-gray-50 pt-16 pb-12 sm:pt-20 md:pt-24 xl:pt-32 sm:pb-20"><div class="max-w-screen-lg xl:max-w-screen-xl mx-auto divide-y divide-gray-200 px-4 sm:px-6 md:px-8"><ul class="Footer_nav__2rFid text-sm font-medium pb-14 sm:pb-20 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10"><li class="space-y-5 row-span-2"><h2 class="text-xs font-semibold tracking-wide text-gray-900 uppercase">Getting started</h2><ul class="space-y-4"><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/installation">Installation</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="https://blog.tailwindcss.com/tailwindcss-v2">Release Notes</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/upgrading-to-v2">Upgrade Guide</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/using-with-preprocessors">Using with Preprocessors</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/optimizing-for-production">Optimizing for Production</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/browser-support">Browser Support</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/intellisense">IntelliSense</a></li></ul></li><li class="space-y-5 row-span-2"><h2 class="text-xs font-semibold tracking-wide text-gray-900 uppercase">Core concepts</h2><ul class="space-y-4"><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/utility-first">Utility-First</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/responsive-design">Responsive Design</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/hover-focus-and-other-states">Hover, Focus, &amp; Other States</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/dark-mode">Dark Mode</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/adding-base-styles">Adding Base Styles</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/extracting-components">Extracting Components</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/adding-new-utilities">Adding New Utilities</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/functions-and-directives">Functions &amp; Directives</a></li></ul></li><li class="space-y-5 row-span-2"><h2 class="text-xs font-semibold tracking-wide text-gray-900 uppercase">Customization</h2><ul class="space-y-4"><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/configuration">Configuration</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/theme">Theme Configuration</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/breakpoints">Breakpoints</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/customizing-colors">Customizing Colors</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/customizing-spacing">Customizing Spacing</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/configuring-variants">Configuring Variants</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/plugins">Plugins</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/docs/presets">Presets</a></li></ul></li><li class="space-y-5"><h2 class="text-xs font-semibold tracking-wide text-gray-900 uppercase">Community</h2><ul class="space-y-4"><li><a class="hover:text-gray-900 transition-colors duration-200" href="https://github.com/tailwindlabs/tailwindcss">GitHub</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="/discord">Discord</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="https://twitter.com/tailwindcss">Twitter</a></li><li><a class="hover:text-gray-900 transition-colors duration-200" href="https://www.youtube.com/tailwindlabs">YouTube</a></li></ul></li></ul><div class="pt-10 sm:pt-12"><svg viewBox="0 0 247 31" width="208" height="26"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z" fill="#06B6D4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M76.546 12.825h-4.453v8.567c0 2.285 1.508 2.249 4.453 2.106v3.463c-5.962.714-8.332-.928-8.332-5.569v-8.567H64.91V9.112h3.304V4.318l3.879-1.143v5.937h4.453v3.713zM93.52 9.112h3.878v17.849h-3.878v-2.57c-1.365 1.891-3.484 3.034-6.285 3.034-4.884 0-8.942-4.105-8.942-9.389 0-5.318 4.058-9.388 8.942-9.388 2.801 0 4.92 1.142 6.285 2.999V9.112zm-5.674 14.636c3.232 0 5.674-2.392 5.674-5.712s-2.442-5.711-5.674-5.711-5.674 2.392-5.674 5.711c0 3.32 2.442 5.712 5.674 5.712zm16.016-17.313c-1.364 0-2.477-1.142-2.477-2.463a2.475 2.475 0 012.477-2.463 2.475 2.475 0 012.478 2.463c0 1.32-1.113 2.463-2.478 2.463zm-1.939 20.526V9.112h3.879v17.849h-3.879zm8.368 0V.9h3.878v26.06h-3.878zm29.053-17.849h4.094l-5.638 17.849h-3.807l-3.735-12.03-3.771 12.03h-3.806l-5.639-17.849h4.094l3.484 12.315 3.771-12.315h3.699l3.734 12.315 3.52-12.315zm8.906-2.677c-1.365 0-2.478-1.142-2.478-2.463a2.475 2.475 0 012.478-2.463 2.475 2.475 0 012.478 2.463c0 1.32-1.113 2.463-2.478 2.463zm-1.939 20.526V9.112h3.878v17.849h-3.878zm17.812-18.313c4.022 0 6.895 2.713 6.895 7.354V26.96h-3.878V16.394c0-2.713-1.58-4.14-4.022-4.14-2.55 0-4.561 1.499-4.561 5.14v9.567h-3.879V9.112h3.879v2.285c1.185-1.856 3.124-2.749 5.566-2.749zm25.282-6.675h3.879V26.96h-3.879v-2.57c-1.364 1.892-3.483 3.034-6.284 3.034-4.884 0-8.942-4.105-8.942-9.389 0-5.318 4.058-9.388 8.942-9.388 2.801 0 4.92 1.142 6.284 2.999V1.973zm-5.674 21.775c3.232 0 5.674-2.392 5.674-5.712s-2.442-5.711-5.674-5.711-5.674 2.392-5.674 5.711c0 3.32 2.442 5.712 5.674 5.712zm22.553 3.677c-5.423 0-9.481-4.105-9.481-9.389 0-5.318 4.058-9.388 9.481-9.388 3.519 0 6.572 1.82 8.008 4.605l-3.34 1.928c-.79-1.678-2.549-2.749-4.704-2.749-3.16 0-5.566 2.392-5.566 5.604 0 3.213 2.406 5.605 5.566 5.605 2.155 0 3.914-1.107 4.776-2.749l3.34 1.892c-1.508 2.82-4.561 4.64-8.08 4.64zm14.472-13.387c0 3.249 9.661 1.285 9.661 7.89 0 3.57-3.125 5.497-7.003 5.497-3.591 0-6.177-1.607-7.326-4.177l3.34-1.927c.574 1.606 2.011 2.57 3.986 2.57 1.724 0 3.052-.571 3.052-2 0-3.176-9.66-1.391-9.66-7.781 0-3.356 2.909-5.462 6.572-5.462 2.945 0 5.387 1.357 6.644 3.713l-3.268 1.82c-.647-1.392-1.904-2.035-3.376-2.035-1.401 0-2.622.607-2.622 1.892zm16.556 0c0 3.249 9.66 1.285 9.66 7.89 0 3.57-3.124 5.497-7.003 5.497-3.591 0-6.176-1.607-7.326-4.177l3.34-1.927c.575 1.606 2.011 2.57 3.986 2.57 1.724 0 3.053-.571 3.053-2 0-3.176-9.66-1.391-9.66-7.781 0-3.356 2.908-5.462 6.572-5.462 2.944 0 5.386 1.357 6.643 3.713l-3.268 1.82c-.646-1.392-1.903-2.035-3.375-2.035-1.401 0-2.622.607-2.622 1.892z" fill="#000"></path></svg></div></div></footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js" crossorigin="anonymous"></script>
+
+</body>
+<script>
+    function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+</script>
+</html>
