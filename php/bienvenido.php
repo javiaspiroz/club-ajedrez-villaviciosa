@@ -86,6 +86,39 @@
     //echo("BIENVENIDO " . $_SESSION['fname']);
     if ($_SESSION['fname'] == "admin"){
         echo("<h3>BIENVENIDO Administrador</h3>");
+        echo("<p>A continuación te mostramos los formularios de contacto enviados. Tras contestar por email, elimina la entrada pulsando el botón.</p><hr>");
+
+        $query = "SELECT * FROM `formulario`" ;
+	    //echo $query;
+	
+	    $result = mysqli_query($connection, $query);
+
+	    if ($result) {
+		    // Success
+		    // redirect_to("somepage.php");
+		    //echo "Success!";
+	    } else {
+		    // Failure
+		    // $message = "Subject creation failed";
+		    die("Database query failed. " . mysqli_error($connection));
+	    }
+        
+	    if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                //echo("<tr style='text-align: center; border: 1px solid black;'><td>".$row["username"]."</td><td>".$row["fname"]."</td><td>".$row["lname"]."</td><td><a href='mailto:".$row["email"]."'>".$row["email"]."</a></tr>");
+                echo("<b>Nombre:</b> " . $row["fname"] . "<br>");
+                echo("<b>Apellido:</b> " . $row["lname"] . "<br>"); 
+                echo("<b>email:</b> " . "<a href='mailto:" .$row["email"] ."'>" .$row["email"] ."</a><br>"); 
+                echo("<b>Asunto:</b> " . "<br>" . $row["subject"] . "<br><br>");
+                echo("<input style='background-color: #705022; align-content: center;' type='submit' name='' value='Respondido' id='btRes' onclick = 'funcion();'>". "<br><hr>");
+            }
+        } else {
+            echo "0 results";
+        }
+
+        //echo("</table>");
+
     }
     else{
         echo("<h3>BIENVENIDO " . $_SESSION['fname'] . "</h3>");
