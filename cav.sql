@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-01-2021 a las 13:56:34
+-- Tiempo de generación: 18-01-2021 a las 22:51:25
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.11
 
@@ -41,8 +41,9 @@ CREATE TABLE `formulario` (
 --
 
 INSERT INTO `formulario` (`fname`, `lname`, `email`, `subject`, `newsletter`, `id`) VALUES
-('ewgw', 'gwgwg', 'pter@gmail.com', 'foqbouefbqoinfoiqnvoiqeoijufbqonvoqbofnoqieaegqqfafa', 0, 16),
-('ewgw', 'gwgwg', 'pter@gmail.com', 'foqbouefbqoinfoiqnvoiqeoijufbqonvoqbofnoqieaegqqfafa', 1, 17);
+('German', 'Lopez', 'gl@gmail.com', 'Hola, ¿qué horario de atención telefónica tenéis?', 0, 16),
+('Pedro', 'Piqueras', 'pedrop@gmail.com', 'Buenas, ¿cuándo empizan el torneo de este año?', 1, 17),
+('Julian', 'Martinez', 'jm@hotmail.com', 'Hola,\r\n¿Cúal es el precio mensual de las calses para menores de 12 años?', 1, 18);
 
 -- --------------------------------------------------------
 
@@ -63,7 +64,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`username`, `password`, `fname`, `lname`, `email`) VALUES
-('javier', '$2y$10$/Y7QvoHnX2Pce9bDuE884us9am5s7e2d2EBFsC3rVbjB1CNfsw6ky', 'javier', 'aspiroz', 'javiaspiroz@gmail.com');
+('admin', '$2y$10$KO3wmzxX8r6ZJr5s5q.z1OSIMGJOMdc0PyRTqEpxnueBgJJUImk66', 'admin', 'admin', 'admin@cav.es'),
+('javier', '$2y$10$/Y7QvoHnX2Pce9bDuE884us9am5s7e2d2EBFsC3rVbjB1CNfsw6ky', 'javier', 'aspiroz', 'javiaspiroz@gmail.com'),
+('juan', '$2y$10$bRk4HJqcSdOi2JVc6NTQsOibKNcnz0WC8jmJivRO/fVJW0nGFPEHa', 'Juan', 'Raya', 'juan@test.com');
 
 --
 -- Índices para tablas volcadas
@@ -89,7 +92,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `formulario`
 --
 ALTER TABLE `formulario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
